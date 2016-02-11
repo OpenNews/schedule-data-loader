@@ -83,6 +83,10 @@ You should also change these values according to your project.
     variable called GOOGLE_SPREADSHEET_KEY for extra security, or can simply
     be stored as a string in this script.
 
+* **GOOGLE_SPREADSHEET_SHEETNAME:** a string naming the individual worksheet
+    with your data. If you leave this blank, the script will assume your data
+    is stored in the spreadsheet's first worksheet.
+
 * **FETCH_MULTIPLE_WORKSHEETS:** set to `True` if `GOOGLE_SPREADSHEET_KEY` points
     to a document with data in multiple worksheets. The import will retrieve data
     from all worksheets and compile into a single JSON file. _NOTE:_ The import
