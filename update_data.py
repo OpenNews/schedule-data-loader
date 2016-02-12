@@ -45,6 +45,9 @@ MAKE_LOCAL_JSON = True
 # set to False for dry runs
 COMMIT_JSON_TO_GITHUB = False
 
+# TODO: Add method for storing JSON output in S3 bucket
+# S3_CONFIG = {}
+# SEND_JSON_TO_S3 = False
 
 def authenticate_with_google():
     '''

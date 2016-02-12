@@ -10,6 +10,10 @@ to use GitHub Pages to serve up a simple web app. This script provides some
 glue between these two workflows, taking advantage of GitHub Pages' automatic
 rebuild when a new commit is pushed to your repository.
 
+There are many tools for pulling data from Google Spreadsheets, depending
+on your needs. This is a purposefully lightweight script that we've found
+useful in a variety of projects, dropped in as a triggered task.
+
 A version of this script provides data to the [SRCCON schedule app](https://github.com/OpenNews/srccon-schedule);
 we set up a Slackbot trigger to fire it off via chat command, pushing a new
 `sessions.json` to the schedule repo and automatically updating the app
@@ -19,6 +23,8 @@ It can also be run on a cron; that's how we kept data up-to-date in the
 [2015 MozFest schedule](https://github.com/mozilla/mozfest-schedule-app).
 The GitHub portion of the script only commits a new JSON file if the data
 has changed, so you can run a cron as often as you like.
+
+TODO: Add a method for storing JSON output in an S3 bucket.
 
 ### How it works
 Four primary methods chain together:
