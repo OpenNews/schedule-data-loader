@@ -1,6 +1,6 @@
 ### What this script does
 This script takes data from a Google spreadsheet, converts it to a JSON array
-where each object has keys corresponding to the spreadsheet column names, then
+where each object has keys corresponding to the spreadsheet column names,
 then stores a JSON file and/or automatically commits it to a GitHub repo.
 
 ### Use cases
